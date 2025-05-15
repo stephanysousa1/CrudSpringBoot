@@ -1,17 +1,28 @@
 Projeto CRUD - Spring Boot
+Este é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Spring Boot. O sistema inicialmente armazena os dados em uma lista na memória e, posteriormente, será expandido para utilizar Hibernate e persistir os dados em um banco de dados relacional.
 
-Este projeto é uma aplicação simples para realizar operações CRUD (Create, Read, Update, Delete) em um sistema que inicialmente utiliza uma lista em memória para armazenar os dados. 
-Depois, a aplicação será expandida para utilizar Hibernate para persistir os dados em um banco de dados relacional.
+🛠 Funcionalidades do CRUD
+POST: Cria um novo item no sistema.
 
-1. Funcionalidades do CRUD:
-   
-POST: Criar um novo item.
+GET: Consulta todos os itens cadastrados.
 
-GET: Consultar os itens.
+PUT: Atualiza os dados de um item existente.
 
-PUT: Atualizar os dados de um item existente.
+DELETE: Remove um item do sistema.
 
-DELETE: Remover um item.
+📦 Tecnologias Utilizadas
+Java ☕
 
+Spring Boot 🌱
+
+Spring Data JPA (a ser implementado para persistência em banco de dados relacional)
+
+Hibernate 🧑‍💻 (a ser integrado para persistência de dados)
+
+Maven para gerenciamento de dependências
+
+JUnit para testes unitários e integração
+
+Postman para testes das APIs
 
 
