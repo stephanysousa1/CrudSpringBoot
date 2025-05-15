@@ -1,5 +1,6 @@
 Projeto CRUD - Spring Boot
-Este é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Spring Boot. O sistema inicialmente armazena os dados em uma lista na memória e, posteriormente, será expandido para utilizar Hibernate e persistir os dados em um banco de dados relacional.
+Este é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Spring Boot. O sistema inicialmente armazena os dados em uma lista na memória e, posteriormente, será expandido para utilizar Hibernate e persistir os dados
+no MariaDB.
 
 🛠 Funcionalidades do CRUD
 POST: Cria um novo item no sistema.
