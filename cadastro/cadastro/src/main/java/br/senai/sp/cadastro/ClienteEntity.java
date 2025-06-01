@@ -1,7 +1,11 @@
 package br.senai.sp.cadastro;
 
 import jakarta.persistence.*;
+import lombok.*;
 
+@NoArgsConstructor
+@Setter
+@Getter
 @Entity
 @Table(name = "clientes")
 public class ClienteEntity {
