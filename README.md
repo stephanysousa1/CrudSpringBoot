@@ -1,21 +1,35 @@
-Projeto CRUD - Spring Boot
-Este é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Spring Boot para Cadastro de Clientes. O sistema inicialmente armazena os dados em uma lista na memória e, posteriormente, será expandido para utilizar Hibernate e persistir os dados
-no MySQL.
-
-Funcionalidades do CRUD
-POST: Cria um novo Cliente no sistema.
-GET: Consulta todos os Cliente cadastrados.
-PUT: Atualiza os dados de um Cliente existente.
-DELETE: Remove um  Clientes do sistema.
-
-📦 Tecnologias Utilizadas
-    Java ☕
-    Spring Boot 🌱
-    Spring Data JPA 
-    Hibernate 🧑‍💻 
-    Maven 
-    JUnit
-    Postman 
-    Lombok
 
 
+## Projeto CRUD – Spring Boot
+
+**Descrição geral:**
+Este é um projeto simples de CRUD (Create, Read, Update, Delete) em Spring Boot para cadastro de clientes. Inicialmente, os dados são mantidos em memória (lista), mas futuramente será integrado ao Hibernate para persistência em banco MySQL.
+
+## Funcionalidades
+
+* **POST /clientes**
+  Cria um novo cliente no sistema.
+
+* **GET /clientes/{id}**
+  Retorna todos os clientes cadastrados e tambem filtra pelo ID.
+
+* **PUT /clientes/{id}**
+  Atualiza os dados de um cliente existente (identificado pelo ID).
+
+* **DELETE /clientes/{id}**
+  Remove um cliente do sistema (identificado pelo ID).
+
+---
+
+### Tecnologias Utilizadas
+
+* **Java ☕**
+* **Spring Boot 🌱**
+* **Spring Data JPA**
+* **Hibernate 🧑‍💻**
+* **Maven**
+* **Postman**
+* **Lombok**
+
+
+Qualquer dúvida ou sugestão de melhoria, me avise!
