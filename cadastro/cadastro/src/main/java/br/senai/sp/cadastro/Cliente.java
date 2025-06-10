@@ -1,15 +1,13 @@
 package br.senai.sp.cadastro;
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 // simplificando com lombok com anotaçoes:
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor // simplifica o construtor
 public class Cliente {
 
