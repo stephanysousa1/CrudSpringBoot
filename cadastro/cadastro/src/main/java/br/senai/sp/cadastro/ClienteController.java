@@ -1,5 +1,6 @@
 package br.senai.sp.cadastro;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<Cliente> criarCliente(@RequestBody Cliente cliente) {
+    public ResponseEntity<Cliente> criarCliente(@RequestBody @Valid Cliente cliente) {
         ClienteEntity clienteEntity = new ClienteEntity();
         clienteEntity.setNome(cliente.getNome());
         clienteEntity.setCpf(cliente.getCpf());
@@ -40,7 +41,7 @@ public class ClienteController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cliente> atualizarCliente(@PathVariable Long id, @RequestBody Cliente clienteAtualizado) {
+    public ResponseEntity<Cliente> atualizarCliente(@PathVariable Long id, @RequestBody @Valid Cliente clienteAtualizado) {
 
         ClienteEntity clienteEntity = clienteRepository.getReferenceById(id);
 
