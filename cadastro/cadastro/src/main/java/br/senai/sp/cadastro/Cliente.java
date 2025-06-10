@@ -5,11 +5,11 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-// simplificando com lombok com anotaçoes:
+// simplificando com lombok e com anotaçoes:
 @Getter
 @Setter
 @AllArgsConstructor // simplifica o construtor
-// remover construtor, setters e getters apos aplicar anotacos
+// remover construtor, setters e getters apos aplicar anotacoes
 public class Cliente {
 
     private Long id;
