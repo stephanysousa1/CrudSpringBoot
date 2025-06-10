@@ -3,7 +3,7 @@
 ## Projeto CRUD – Spring Boot
 
 **Descrição geral:**
-Este é um projeto simples de CRUD (Create, Read, Update, Delete) em Spring Boot para cadastro de clientes. Inicialmente, os dados são mantidos em memória (lista), mas futuramente será integrado ao Hibernate para persistência em banco MySQL.
+Este é um projeto simples de CRUD (Create, Read, Update, Delete) em Spring Boot para cadastro de clientes  integrado ao Hibernate para persistência em banco MySQL.
 
 ## Funcionalidades
 
@@ -28,6 +28,7 @@ Este é um projeto simples de CRUD (Create, Read, Update, Delete) em Spring Boot
 * **Spring Data JPA**
 * **Hibernate 🧑‍💻**
 * **Maven**
+* **Bean Validation**
 * **Postman**
 * **Lombok**
 
