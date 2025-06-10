@@ -2,22 +2,41 @@ package br.senai.sp.cadastro;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.time.Period;
+import java.time.LocalDate;
 
-@NoArgsConstructor    // Gera um construtor sem argumentos
 @Setter
 @Getter
-@Entity               // Marca esta classe como uma entidade JPA
-@Table(name = "clientes")  // Define o nome da tabela no banco de dados
 public class ClienteEntity {
 
-    @Id  // Define o campo como chave primária
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // Gera o valor automaticamente no banco (auto-incremento)
     private Long id;
 
-    @Column(nullable = false)  // Define a coluna e indica que não pode ser nula
     private String nome;
 
-    @Column(nullable = false)  // Define a coluna e indica que não pode ser nula
+    @Column(nullable = false)
+    private String cpf;
+
+    @Column(nullable = false)
+    private LocalDate dataNascimento;
+
+    @Column(nullable = false)
+    private String telefone;
+
+    @Column(nullable = false)
     private String email;
 
+    @Column(nullable = false)
+    private String endereco;
+
+    @Column(nullable = false)
+    private String cep;
+
+    // método para calcular a idade baseado na data de nascimento
+
+    public int getIdade() {
+        if (this.dataNascimento == null) return 0;
+        return Period.between(this.dataNascimento, LocalDate.now()).getYears();
+    }
+
 }
+
