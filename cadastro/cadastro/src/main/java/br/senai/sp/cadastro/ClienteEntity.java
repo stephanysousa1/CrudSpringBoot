@@ -1,9 +1,12 @@
 package br.senai.sp.cadastro;
 
 import jakarta.persistence.*;
-import lombok.*;
-import java.time.Period;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.LocalDate;
+import java.time.Period;
 
 @Setter
 @Getter
@@ -19,7 +22,7 @@ public class ClienteEntity {
     @Column(nullable = false)
     private String nome;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String cpf;
 
     @Column(nullable = false)
@@ -28,7 +31,7 @@ public class ClienteEntity {
     @Column(nullable = false)
     private String telefone;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)
@@ -36,6 +39,11 @@ public class ClienteEntity {
 
     @Column(nullable = false)
     private String cep;
+
+    // metodo para calcular idade baseada na data de nascimento
+    public int getIdade() {
+        return Period.between(this.dataNascimento, LocalDate.now()).getYears();
+    }
 
 }
 
