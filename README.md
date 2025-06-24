@@ -25,7 +25,7 @@ Este projeto é uma API RESTful completa para o gerenciamento de clientes, desen
 * **Java ☕** : Linguagem de programação principal, na versão 17+.
 * **Spring Boot 🌱** : Framework líder para desenvolvimento rápido e simplificado de aplicações Java, focado em microserviços e APIs RESTful.
 * **Spring Data JPA** : Facilita enormemente o acesso a dados, fornecendo uma camada de abstração poderosa sobre JPA
-* * **MySQL** : Sistema de Gerenciamento de Banco de Dados Relacional (SGBDR)
+* **MySQL** : Sistema de Gerenciamento de Banco de Dados Relacional (SGBDR)
 * **Hibernate 🧑‍💻**: A implementação padrão da JPA, responsável pelo Mapeamento Objeto-Relacional (ORM)
 * **Maven** : Ferramenta padrão para automação de build e gerenciamento de dependências do projeto Java
 * **Bean Validation** : API utilizada para validar a integridade e consistência dos dados de entrada (JSON) recebidos pela API antes que sejam processados
