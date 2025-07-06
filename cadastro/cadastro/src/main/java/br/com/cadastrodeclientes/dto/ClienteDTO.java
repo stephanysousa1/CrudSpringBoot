@@ -1,10 +1,7 @@
-package br.senai.sp.cadastro;
+package br.com.cadastrodeclientes.dto;
 
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.time.LocalDate;
@@ -14,6 +11,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor // simplifica o construtor
+@Builder
 public class ClienteDTO {
 
     private Long id;

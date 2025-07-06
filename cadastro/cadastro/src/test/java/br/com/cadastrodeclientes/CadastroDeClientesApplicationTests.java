@@ -1,4 +1,4 @@
-package br.senai.sp.cadastro;
+package br.com.cadastrodeclientes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

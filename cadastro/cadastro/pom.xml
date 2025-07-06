@@ -16,7 +16,7 @@
 	<artifactId>cadastro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Cadastro de clientes</name>
-	<description>Uma API para gerenciamento dos clientes do SENAI</description>
+	<description>Uma API para gerenciamento dos clientes </description>
 	<url/>
 
 	<properties>
